@@ -1,4 +1,5 @@
-var Resources = require('resources.js');
+import React from 'react';
+import Resources from './resources';
 
 React.render(
   <Resources />,
