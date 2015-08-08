@@ -1,11 +1,15 @@
 import React from 'react';
-import Resource from './resource';
+import ResourcesList from './resources_list';
+import ResourceForm from './resource_form.js';
 
 export default React.createClass({
+  getInitialState(): any {
+    return {data: [{title: "Bimorphic", url: "http://bimorphic.com"}]};
+  },
   render(): any {
     return <div className="resources">
-      <Resource url="http://bimorphic.com" title="Bimorphic" />
-      <Resource url="http://bimorphic.com" title="Bimorphic" />
+      <ResourceForm />
+      <ResourcesList data={this.state.data} />
     </div>;
   }
 });

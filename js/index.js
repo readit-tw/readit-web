@@ -1,11 +1,7 @@
 import React from 'react';
 import Resources from './resources';
-import ResourceForm from './resource_form';
 
 React.render(
-  <div>
-    <ResourceForm />
-    <Resources />
-  </div>,
+  <Resources />,
   document.getElementById('resources')
 );
